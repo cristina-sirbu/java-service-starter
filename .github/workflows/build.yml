@@ -32,4 +32,6 @@ jobs:
             ${{ runner.os }}-maven-
 
       - name: Build with Maven
-        run: mvn -B clean verify
+        run: |
+          cd service-template
+          mvn -B clean verify
