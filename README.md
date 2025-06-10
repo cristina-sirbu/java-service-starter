@@ -65,5 +65,3 @@ curl http://localhost:8080/actuator/metrics # for metrics to be scraped by Prome
 ## Feedback
 
 Open an issue or PR if you have ideas or suggestions! This project is designed for internal platform use, but feedback from other engineers is always welcome.
-
-bfb33eb Cristina Junca (Sirbu) <sirbucristina.is@gmail.com>
