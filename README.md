@@ -43,20 +43,36 @@ Mini Apollo aims to provide a consistent, scalable, and easy-to-use starting poi
 
 ## Quickstart
 
-> _Clone the template and run locally_
+Clone the template and run locally
 
 ```bash
 git clone https://github.com/cristina-sirbu/java-service-starter.git
 cd mini-apollo/service-template
+```
 
+### Run locally
+
+```shell
+# From inside service-template/
+mvn clean package
 mvn spring-boot:run
 ```
 
+### Run in Docker
+
+```shell
+mvn clean package
+docker build -t mini-apollo-service .
+docker run -p 8080:8080 mini-apollo-service
+```
+
+### Test application
+
 ```shell
 curl http://localhost:8080/hello # dummy endpoint
-curl http://localhost:8080/fail # endpoint to test failures
+curl http://localhost:8080/fail # simulate internal failure
 curl http://localhost:8080/health # health check
-curl http://localhost:8080/actuator/health # is the application UP and running?
+curl http://localhost:8080/actuator/health # spring boot health check
 curl http://localhost:8080/actuator/metrics # for metrics to be scraped by Prometheus
 ```
 
