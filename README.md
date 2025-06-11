@@ -1,5 +1,3 @@
-# java-service-starter
-
 # Mini Apollo – Java Microservice Starter & Developer Toolkit
 
 > A developer-friendly project starter for building, testing, and deploying Java microservices — inspired by Spotify’s Apollo framework.
@@ -12,36 +10,20 @@ Mini Apollo aims to provide a consistent, scalable, and easy-to-use starting poi
 
 ---
 
-## Features
+## What is in this repository?
 
-- [x] Minimal REST API starter (`/hello`, `/health`)
-- [x] Structured logging with request tracing
-- [x] Metrics support via Micrometer (Prometheus-ready)
-- [ ] Built-in testing structure
-- [ ] Config via environment variables or property files
-- [ ] Docker-ready
-- [ ] CI/CD pipeline with GitHub Actions
-- [ ] Optional: Helm / Kubernetes deployment configs
-
----
-
-## Tech Stack
-
-| Layer      | Tool              |
-|------------|-------------------|
-| Language   | Java 17+          |
-| Framework  | Spring Boot       |
-| Build Tool | Maven             |
-| Metrics    | Micrometer        |
-| Logging    | SLF4J + Logback   |
-| CI/CD      | GitHub Actions    |
-| Container  | Docker            |
-| Deployment | Kubernetes        |
-| IaC        | Terraform for GCP |
+| Component             | Location                              | Description                                                                |
+| --------------------- | ------------------------------------- | -------------------------------------------------------------------------- |
+| **Java Service**      | `service-template/`                   | Spring Boot app with `/hello`, `/health`, metrics, logging, error handling |
+| **Helm Chart**        | `service-template/mini-apollo/`       | Kubernetes deployment templates using Helm                                 |
+| **Docker Image**      | `Dockerfile` (in `service-template/`) | Used for local or cluster deployments                                      |
+| **Terraform (GCP)**   | `infra/`                              | Simulated Cloud Run deployment using `terraform plan`                      |
+| **CI/CD Pipeline**    | `.github/workflows/`                  | GitHub Actions workflow for build + test                                   |
+| **Architecture Docs** | `docs/adr-*.md`                       | ADRs documenting architectural decisions                                   |
 
 ---
 
-## Quickstart
+## Instructions
 
 Clone the template and run locally
 
