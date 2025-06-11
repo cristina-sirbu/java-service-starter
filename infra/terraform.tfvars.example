@@ -1,0 +1,3 @@
+project_id = "my-gcp-project-id"
+region     = "us-central1"
+image      = "gcr.io/my-gcp-project-id/mini-apollo:latest"

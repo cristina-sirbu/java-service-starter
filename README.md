@@ -121,6 +121,13 @@ Test application.
 curl http://localhost:8080/hello
 ```
 
+### Run in Google Cloud Run (using Terraform)
+
+The `infra/` folder contains a simulated Terraform setup for deploying this project to Google Cloud Run.
+See [`infra/README.md`](./infra/README.md) for setup instructions.
+
+_Disclaimer_: This is a **simulation only** — no resources are created, and no billing is incurred.
+
 ---
 
 ## Feedback
