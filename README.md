@@ -114,4 +114,4 @@ _Disclaimer_: This is a **simulation only** — no resources are created, and no
 
 ## Feedback
 
-Open an issue or PR if you have ideas or suggestions! This project is designed for internal platform use, but feedback from other engineers is always welcome.
+This project is personal, but contributions, suggestions and feedback are welcome!
